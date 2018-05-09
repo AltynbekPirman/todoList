@@ -1,0 +1,76 @@
+body{
+  background: #003973;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #E5E5BE, #003973);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E5E5BE, #003973); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.container{
+  width: 360px;
+  margin: 60px auto;
+  box-shadow: 3px 5px rgba(124, 174, 255, 0.2);
+}
+h1{
+  padding: 20px;
+  text-align: center;
+  background: #9f9fc4;
+  color: white;
+  margin: 0;
+  text-transform: uppercase;
+}
+input{
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 10px 25px;
+  border: 1px solid rgba(0, 0, 0, 0)
+}
+input:focus{
+  border: 2px solid #9f9fc4;
+  outline: none;
+}
+ul{
+  padding: 0;
+  margin: 0;
+}
+li{
+    list-style-type: none;
+    line-height: 33px;
+    padding-left: 0;
+    background-color: white;
+    overflow: auto;
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow-y: hidden;
+}
+li:nth-child(even){
+  background: #f2f2f2;
+  color: black;
+}
+span{
+  color: red;
+  padding: 0 10px;
+  background: #f74b38;
+  color: white;
+  display: inline-block;
+  margin-right: 10px;
+  height: 35px;
+  text-align: center;
+  font-size: 20px;
+  width: 20px;
+}
+.done{
+  color: gray;
+  text-decoration: line-through;
+}
+.date{
+    text-align: right;
+    padding-right: 10%;
+}
+.right{
+  float: right;
+  font-size: 20px;
+  margin-top: 10px;
+}
