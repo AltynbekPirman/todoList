@@ -44,5 +44,9 @@ $('ul').on('click', 'span', function() {
 })
 setInterval(function(){
   var current_time = new Date();
-  document.getElementById('current_time').innerHTML = current_time.getHours() + ":" + current_time.getMinutes() + ":" + current_time.getSeconds();
+  if(current_time.getSeconds() < 10) {
+    document.getElementById('current_time').innerHTML = current_time.getHours() + ":" + current_time.getMinutes() + ":0" + current_time.getSeconds();
+  } else {
+    document.getElementById('current_time').innerHTML = current_time.getHours() + ":" + current_time.getMinutes() + ":" + current_time.getSeconds();
+  }
 }, 500)
