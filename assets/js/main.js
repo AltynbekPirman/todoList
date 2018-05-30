@@ -42,3 +42,7 @@ $('ul').on('click', 'span', function() {
         location.reload();
     }
 })
+setInterval(function(){
+  var current_time = new Date();
+  document.getElementById('current_time').innerHTML = current_time.getHours() + ":" + current_time.getMinutes() + ":" + current_time.getSeconds();
+}, 500)
